@@ -5,6 +5,7 @@
       `((".*" ,temporary-file-directory t)))
 
 (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0/")
+(add-to-list 'load-path "~/.emacs.d/markdown-mode/")
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-resolve)
