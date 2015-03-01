@@ -6,6 +6,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0/")
 (add-to-list 'load-path "~/.emacs.d/markdown-mode/")
+(add-to-list 'load-path "~/.emacs.d/lua-mode/")
+
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-resolve)
@@ -17,6 +19,11 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;;Lua mode
+(autoload 'lua-mode "lua-mode" "Lua editing mode." )
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
+(add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 (setq default-fill-mode 80)
 (custom-set-variables
