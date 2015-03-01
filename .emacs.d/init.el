@@ -24,7 +24,10 @@
  ;; you could mess it up, so be careful.  Your init file should
  ;; contain only one such instance.  If there is more than one, they
  ;; won't work right.
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(show-paren-mode 1)
+ )
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.  If you edit it by hand, you
  ;; could mess it up, so be careful.  Your init file should contain
@@ -41,4 +44,6 @@
 ;; Windows Style Undo
 (global-set-key [(control z)] 'undo)
 
-
+;; Navigation shortcuts
+(global-set-key (kbd "M-n") 'forward-paragraph)
+(global-set-key (kbd "M-p") 'backward-paragraph)
