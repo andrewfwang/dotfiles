@@ -3,3 +3,5 @@ export SUDO_PS1="\[\e[41m\]\u\[\e[0m\]@\h\[\e[37;1m\]\w\[\e[0m\]\$ "
 export CLICOLOR=1                                                              
 export LSCOLORS=exfxbxdxcxegedabagacad                                        
 alias ls='ls -GFh'
+
+export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
