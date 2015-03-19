@@ -61,3 +61,5 @@
 (global-set-key [(control w)] 'kill-buffer)
 (global-set-key [(control s)] 'save-buffer)
 (global-set-key [(control shift s)] 'write-file)
+(global-set-key [(control tab)] 'next-buffer)
+(global-set-key [(control shift tab)] 'previous-buffer)
