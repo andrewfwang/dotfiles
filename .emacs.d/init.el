@@ -26,6 +26,7 @@
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
 (setq default-fill-mode 80)
+(menu-bar-mode -1)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.  If you edit it by hand,
  ;; you could mess it up, so be careful.  Your init file should
@@ -34,6 +35,7 @@
  '(tool-bar-mode nil)
  '(show-paren-mode 1)
  )
+
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.  If you edit it by hand, you
@@ -48,9 +50,14 @@
 (global-unset-key [(control z)])
 (global-unset-key [(control x)(control z)])
 
-;; Windows Style Undo
-(global-set-key [(control z)] 'undo)
-
 ;; Navigation shortcuts
 (global-set-key (kbd "M-n") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'backward-paragraph)
+
+;; Standard shortcuts
+(global-set-key [(control v)] 'yank)
+(global-set-key [(control z)] 'undo)
+(global-set-key [(control o)] 'find-file)
+(global-set-key [(control w)] 'kill-buffer)
+(global-set-key [(control s)] 'save-buffer)
+(global-set-key [(control shift s)] 'write-file)
